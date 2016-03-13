@@ -1,0 +1,12 @@
+<h3>{{ q.title }}</h3>
+<p>{{ q.text }}</h3>
+
+<div>
+  {% include "qa/create_answer.html" %}
+</div>
+
+<ul>
+{% for ans in q.answer_set.all %}
+    <li>{{ ans.text }}</li>
+{% endfor %}
+</ul>

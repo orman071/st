@@ -1,0 +1,8 @@
+<h1>Sign up</h1>
+<form method='post' action='/signup/'>
+  {% csrf_token %}
+  <fieldset>
+    {{ form.as_p }}
+  </fieldset>
+  <button type='submit'>Save</button>
+</form>

@@ -1,0 +1,7 @@
+<form method='post' action='/answer/'>
+  {% csrf_token %}
+  <fieldset>
+    {{ form.as_p }}
+  </fieldset>
+  <button type='submit'>Save</button
+</form>
